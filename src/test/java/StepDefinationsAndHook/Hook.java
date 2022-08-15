@@ -23,7 +23,8 @@ public class Hook  extends Base {
 	}
 	
 	@Before
-	public void LoginVtiger() throws Throwable {
+	public void LoginVtiger() throws Throwable
+	{
 		PropertyUtility propUtility = base.propertyutility=new PropertyUtility();
 		base.webdriverutility=new WebdriverUtility();
 		propUtility.loadPropertyFile();
@@ -34,7 +35,8 @@ public class Hook  extends Base {
 		String password = propUtility.readPassword();
 		
 		
-	if(browser.equalsIgnoreCase("chrome")) {
+	if(browser.equalsIgnoreCase("chrome")) 
+	{
 		WebDriverManager.chromedriver().setup();
 		base.driver=new ChromeDriver();
 		base.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -44,8 +46,9 @@ public class Hook  extends Base {
 		base.driver=new FirefoxDriver();
 		base.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
-	else {
-		System.out.println("Enter Valid Browser Name");
+	else 
+	{
+		System.out.println("Enter Valid BrowserName");
 	}
 	base.driver.get(url);
 	
