@@ -10,9 +10,7 @@ import bdd.PomPages.LoginPage;
 import bdd.genericUtility.PropertyUtility;
 import bdd.genericUtility.WebdriverUtility;
 import io.cucumber.java.After;
-import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
-import io.cucumber.java.BeforeAll;
 import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
